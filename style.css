@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  width: 1440px;
+  height: 100vh;
+  background-color: hsl(217, 54%, 11%);
+  font-family: Outfit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card{
+  background-color: hsl(216, 50%, 16%);
+  width: 300px;
+  height: 500px;
+  border-radius: 4%;
+  box-shadow: 
+  0px 15px 0px 35px #00000008,
+  0px 15px 5px 15px #00000020;
+}
+
+.card .image{
+  position: relative;
+  width: 250px;
+  height: 250px;
+  border-radius: 3%;
+  margin: 25px 25px;
+  cursor: pointer;
+}
+.card h3{
+  color: hsl(0, 0%, 100%);
+  position: relative;
+  top: -10px;
+  left: 25px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.card .description{
+  color: hsl(215, 51%, 70%);
+  position: relative;
+  left: 25px;
+  Font-size: 16px;
+  font-weight: 300;
+  opacity: 70%;
+}
+.card .span-1{
+  position: relative;
+  top: 15px;
+  left: 40px;
+  Font-size: 15px;
+  font-weight: 600;
+  color: hsl(215, 51%, 70%)
+}
+
+.card .icon-1{
+  position: relative;
+  height: 15px;
+  top: 17px;
+  left: -47px;
+}
+.card .span-2{
+  position: relative;
+  top: 15px;
+  left: 125px;
+  Font-size: 14px;
+  font-weight: 500;
+  color: hsl(215, 51%, 70%);
+  opacity: 75%;
+}
+.card .icon-2{
+  position: relative;
+  height: 14px;
+  top: 17px;
+  left: 40px;
+}
+.card hr{
+  position: relative;
+  top: 35px;
+  width: 250px;
+  left: 25px;
+  opacity: 5%;
+}
+
+.card .avatar{
+  height: 35px;
+  width: 35px;
+  position: relative;
+  top: 50px;
+  left: 25px;
+  border: white 1px solid;
+  border-radius: 50%;
+}
+
+.card .span-3{
+  position: relative;
+  top: 38px;
+  left: 35px;
+  Font-size: 14px;
+  font-weight: 400;
+  color: hsl(215, 51%, 70%);
+  opacity: 75%;
+}
+.card .span-4{
+  color: hsl(0, 0%, 100%);
+  cursor: pointer;
+}
+
+.hover{
+  width: 250px;
+  height: 250px;
+  position: absolute;
+  top: 154px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4%;
+  background-color: transparent;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.view{
+  opacity: 0;
+}
+
+.hover:hover{
+  background-color: rgba(139, 172, 218, 0.527);
+}
+
+.hover:hover .view{
+  opacity: 100%;
+}
+
+
+/* Mobile */
+@media (max-width:375px) {
+  body{
+    width: 375px;
+  }
+}
+.attribution{
+  position: absolute;
+  top: 96%;
+  font-size: 14px;
+  font-weight: 500;
+  
+}
+
+
+
+
