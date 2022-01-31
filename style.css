@@ -3,7 +3,7 @@
   box-sizing: border-box;
 }
 body{
-  width: 1440px;
+  width: 100%;
   height: 100vh;
   background-color: hsl(217, 54%, 11%);
   font-family: Outfit;
@@ -21,14 +21,44 @@ body{
   0px 15px 5px 15px #00000020;
 }
 
-.card .image{
+.card-img__holder{
   position: relative;
   width: 250px;
   height: 250px;
   border-radius: 3%;
   margin: 25px 25px;
   cursor: pointer;
+  overflow: hidden;
 }
+.image{
+  width: 100%;
+  height: 100%;
+}
+/* Hover */
+.hover{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  z-index: 10;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+  background-color: rgba(139, 172, 218, 0.527);
+  opacity: 0
+}
+
+.hover:hover{
+  opacity: 1;
+}
+
+
+
+
+
 .card h3{
   color: hsl(0, 0%, 100%);
   position: relative;
@@ -107,37 +137,11 @@ body{
   cursor: pointer;
 }
 
-.hover{
-  width: 250px;
-  height: 250px;
-  position: absolute;
-  top: 154px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 4%;
-  background-color: transparent;
-  z-index: 10;
-  cursor: pointer;
-}
-
-.view{
-  opacity: 0;
-}
-
-.hover:hover{
-  background-color: rgba(139, 172, 218, 0.527);
-}
-
-.hover:hover .view{
-  opacity: 100%;
-}
-
 
 /* Mobile */
 @media (max-width:375px) {
   body{
-    width: 375px;
+    max-width: 100%;
   }
 }
 .attribution{
@@ -145,7 +149,16 @@ body{
   top: 96%;
   font-size: 14px;
   font-weight: 500;
-  
+  color: hsl(215, 51%, 70%);
+  transition: all 0.3s ease-out;
+}
+.attribution a{
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease-out;
+}
+.attribution a:hover{
+  color: hsl(215, 51%, 70%);
 }
 
 
